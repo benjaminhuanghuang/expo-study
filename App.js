@@ -1,14 +1,22 @@
+/*
+
+*/
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+
+import Expo from 'expo';
+
+//
+import MapDemo from './MapDemo';
+import ContactsDemo from './ContactsDemo';
+import CompassDemo from './CompassDemo';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+        // <MapDemo/>
+        // <ContactsDemo/>
+        <CompassDemo/>
     );
   }
 }
@@ -16,8 +24,9 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ccc',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Expo.Constants.statusBarHeight
   },
 });
